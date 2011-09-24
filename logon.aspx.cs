@@ -13,9 +13,24 @@ public partial class logon : System.Web.UI.Page
     }
     protected void btnSubmit_Click(object sender, EventArgs e)
     {
-        if (System.Web.Security.FormsAuthentication.Authenticate(txtUsername.Text, txtPass.Text))
+        /*if (System.Web.Security.FormsAuthentication.Authenticate(txtUsername.Text, txtPass.Text))
         {
             System.Web.Security.FormsAuthentication.RedirectFromLoginPage(txtUsername.Text, false);
         }
+         */
+
+        System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection();
+        var conString = System.Configuration.ConfigurationManager.ConnectionStrings["DevryRemoted"];
+        conn.ConnectionString = conString.ConnectionString;
+
+        conn.Open();
+        
+
+        conn.Close();
+        conn.Dispose();
+
+        /*System.Data.SqlClient.SqlConnection comm = new System.Data.SqlClient.SqlConnection();
+        comm.Connection = conn;
+        comm.CommandText =""
     }
 }
