@@ -10,10 +10,24 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server"> 
-<div>
+   <br />
+   <br />
+<div align="center" 
+        style="height: 71px; width: 1643px; text-align: center; margin-right: 0px">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="Login" runat="server" PostBackUrl="~/logon.aspx" 
+        style="font-size: large" Text="Login" Width="184px" />
+    <asp:Button ID="Hunting" runat="server" PostBackUrl="~/Hunting.aspx" 
+        style="font-size: large" Text="Hunting" Width="184px" />
+    <asp:Button ID="Fishing" runat="server" style="font-size: large" Text="Fishing" 
+        Width="184px" />
+    <asp:Button ID="Services" runat="server" style="font-size: large" 
+        Text="Services" Width="184px" />
+    <asp:Button ID="Sponsors" runat="server" style="font-size: large" 
+        Text="Sponsors" Width="184px" />
+    <asp:Button ID="Registration" runat="server" style="font-size: large" 
+        Text="Registration" Width="216px" />
 </div>
-   <br />
-   <br />
    <br />
    <br />
    <br />

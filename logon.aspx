@@ -7,6 +7,9 @@
     <br />
     <br />
     <br />
+    <asp:Label ID="lblError" runat="server" Text=""></asp:Label>
+    
+
     <br />
     <asp:Label ID="lblUsername" runat="server" Text="Label">User Name: </asp:Label>
     <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>

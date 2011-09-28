@@ -19,18 +19,38 @@ public partial class logon : System.Web.UI.Page
         }
          */
 
-        System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection();
-        var conString = System.Configuration.ConfigurationManager.ConnectionStrings["DevryRemoted"];
-        conn.ConnectionString = conString.ConnectionString;
+       System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection();  
+     
+        //http://pietschsoft.com/post/2005/12/28/ASPNET-20-How-to-get-a-specific-ConnectionString-from-the-WebConfig-by-name.aspx        
+        var conString = System.Configuration.ConfigurationManager.ConnectionStrings["DeVryRemotedb"];        
+        conn.ConnectionString = conString.ConnectionString;      
+        conn.Open(); 
+       
 
-        conn.Open();
-        
+        System.Data.SqlClient.SqlCommand comm = new System.Data.SqlClient.SqlCommand();        
+        comm.Connection = conn;       
+        comm.CommandText = "select firstname from Blundell_users where userid = @userid and [password] = @pass";        
+        comm.Parameters.AddWithValue("@userid", txtUsername.Text);       
+        comm.Parameters.AddWithValue("@pass", txtPass.Text);       
+        System.Data.SqlClient.SqlDataReader DR ;      
+        DR = comm.ExecuteReader();       
+        if (DR.HasRows)  
+   
+        {            //good 
+            System.Web.Security.FormsAuthentication.SetAuthCookie(txtUsername.Text, false);           
+            Response.Redirect("Default.aspx");
+            lblError.Visible = false;       
+        } 
 
-        conn.Close();
+        else 
+        {            
+            //bad  
+            lblError.Text = "Either your username or password was incorrect!";  
+            lblError.Visible = true;   
+        }        
+        conn.Close();        
         conn.Dispose();
 
-        /*System.Data.SqlClient.SqlConnection comm = new System.Data.SqlClient.SqlConnection();
-        comm.Connection = conn;
-        comm.CommandText =""
+        
     }
 }
