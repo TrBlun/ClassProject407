@@ -6,6 +6,12 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            font-size: xx-large;
+        }
+    </style>
 </head>
 <body bgcolor="#666633" text="#000000">
     <form id="form1" runat="server">
@@ -13,7 +19,7 @@
         <table border="0" align="center" style="width: 663px">
             <tr>
                 <td align="center" valign="top" class="style7">
-                    Northeast Texas Hunting &amp; Fishing Guide Services<br />
+                    <span class="style1"><strong>Northeast Texas Hunting &amp; Fishing Guide Services</strong></span><br />
                 </td>
             </tr>
         </table>
@@ -22,27 +28,9 @@
 
          </div> 
          <div> 
-         </div>     
-         
+         </div>       
 
-        <table width="9%" border="0" align="left" cellpadding="0" cellspacing="0">
-            <tr>
-                <td height="240" align="left" valign="top">
-                    <p class="Home">
-                        <a href="Hunting &amp;  More.html">Hunting</a></p>
-                    <p class="Home">
-                        <a href="Fishing &amp; More.html">Fishing</a></p>
-                    <p class="Home">
-                        <a href="Services.html">Services</a></p>
-                    <p class="Home">
-                        <a href="Sponors.html">Sponsors</a></p>
-                    <p class="Home">
-                        <a href="Registration Form.html">Registration</a></p>
-                         <p >
-                         <a href="logon.aspx">Logon</a></p>
-                </td>
-            </tr>
-        </table>
+       
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
     </div>

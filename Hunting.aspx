@@ -10,37 +10,43 @@
         {
             text-align: left;
         }
+        .style2
+        {
+            text-align: left;
+            font-size: x-large;
+        }
     </style>
 </head>
 <body bgcolor="#993300">
     <form id="form1" runat="server">
     <div align="center" style="font-size: larger; font-weight: 700">
     
-        Hunting<br />
+                    <span class="style2"><strong>Northeast Texas Hunting &amp; Fishing Guide Services</strong></span><br />
+        <br />
+        Welcome to the
+    
+        Hunting Page<br />
         <br />
     
     </div>
     <div class="style1">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
     <asp:Button ID="Home" runat="server" PostBackUrl="~/Default.aspx" Text="Home" 
-        Width="135px" BackColor="White" BorderColor="Black" BorderStyle="Solid" 
-            Font-Bold="True" Height="38px" style="font-size: large" />
-    <asp:Button ID="Fishing" runat="server" Text="Fishing" Width="135px" 
-            BackColor="White" BorderColor="Black" BorderStyle="Solid" Font-Bold="True" 
-            Height="37px" style="font-size: large" />
-    <asp:Button ID="Services" runat="server" Text="Services" Width="135px" 
-            BackColor="White" BorderColor="Black" BorderStyle="Solid" Font-Bold="True" 
-            Height="38px" style="font-size: large" />
-    <asp:Button ID="Sponsors" runat="server" Text="Sponsors" Width="135px" 
-            BackColor="White" BorderColor="Black" BorderStyle="Solid" Font-Bold="True" 
-            Height="37px" style="font-size: large" />
-    <asp:Button ID="Login" runat="server" Text="Login" Width="135px" BackColor="White" 
-            BorderColor="Black" BorderStyle="Double" BorderWidth="2px" Font-Bold="True" 
+        Width="135px" 
+            Font-Bold="True" Height="38px" style="font-size: large" /> 
+    <asp:Button ID="Fishing" runat="server" Text="Fishing" Width="135px" Font-Bold="True" 
+            Height="37px" style="font-size: large" PostBackUrl="~/Fishing.aspx" />
+    <asp:Button ID="Services" runat="server" Text="Services" Width="135px" Font-Bold="True" 
+            Height="38px" style="font-size: large" PostBackUrl="~/Services.aspx" />
+    <asp:Button ID="Sponsors" runat="server" Text="Guide Registration" Width="218px" Font-Bold="True" 
+            Height="37px" style="font-size: large" 
+            PostBackUrl="~/Guide Registration.aspx" />
+    <asp:Button ID="Login" runat="server" Text="Login" Width="135px" Font-Bold="True" 
             ForeColor="Black" Height="37px" PostBackUrl="~/logon.aspx" 
             style="font-size: large; color: #000000; z-index: 1" />
-        <br />
-        <br />
-        <br />
+            
         <br />
     <br />
     </div>

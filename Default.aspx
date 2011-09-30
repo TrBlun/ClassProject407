@@ -6,117 +6,151 @@
     {
         text-align: center;
     }
-</style>
+    .style14
+    {
+        width: 36%;
+        height: 990px;
+    }
+    .style15
+    {
+        width: 347px;
+    }
+    .style16
+    {
+        width: 347px;
+        height: 111px;
+    }
+    .style17
+    {
+        width: 457px;
+        height: 111px;
+    }
+    .style18
+    {
+        width: 457px;
+    }
+        #Submit
+        {
+            text-align: center;
+        }
+        .style19
+        {
+            font-size: medium;
+        }
+    </style>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server"> 
-   <br />
+    <br />
    <br />
 <div align="center" 
-        style="height: 71px; width: 1643px; text-align: center; margin-right: 0px">
+        style="height: 71px; width: 1800px; text-align: center; margin-right: 0px">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Button ID="Login" runat="server" PostBackUrl="~/logon.aspx" 
-        style="font-size: large" Text="Login" Width="184px" />
+        style="font-size: large" Text="Login" Width="184px" BackColor="#9D4F00" 
+        BorderStyle="Solid" Height="27px" />
     <asp:Button ID="Hunting" runat="server" PostBackUrl="~/Hunting.aspx" 
-        style="font-size: large" Text="Hunting" Width="184px" />
+        style="font-size: large" Text="Hunting" Width="184px" 
+        BackColor="#9D4F00" BorderStyle="Solid" Height="27px" />
     <asp:Button ID="Fishing" runat="server" style="font-size: large" Text="Fishing" 
-        Width="184px" />
+        Width="184px" BackColor="#9D4F00" BorderStyle="Solid" Height="27px" 
+        PostBackUrl="~/Fishing.aspx" />
     <asp:Button ID="Services" runat="server" style="font-size: large" 
-        Text="Services" Width="184px" />
+        Text="Services" Width="184px" BackColor="#9D4F00" BorderStyle="Solid" 
+        Height="27px" PostBackUrl="~/Services.aspx" />
     <asp:Button ID="Sponsors" runat="server" style="font-size: large" 
-        Text="Sponsors" Width="184px" />
+        Text="Sponsors" Width="184px" BackColor="#9D4F00" BorderStyle="Solid" 
+        Height="27px" />
     <asp:Button ID="Registration" runat="server" style="font-size: large" 
-        Text="Registration" Width="216px" />
+        Text="Registration" Width="216px" BackColor="#9D4F00" 
+        BorderStyle="Solid" Height="27px" 
+        PostBackUrl="~/Guide Registration.aspx" />
+    <br />
+    <br />
+    <br />
 </div>
    <br />
+<br />
+<br />
+<br />
+<br />
+<asp:TextBox ID="TextBox1" runat="server" AutoCompleteType="Company" 
+    BackColor="White" BorderStyle="Solid" Font-Bold="True" Font-Size="Large" 
+    ReadOnly="True" 
+    style="text-align: center; position: relative; top: 110px; left: 583px; width: 645px">Please Select Your Favorite Photo and Vote</asp:TextBox>
+<br />
+<br />
+<br />
+&nbsp;
+<br />
+<br />
    <br />
-   <br />
-   <br />
-   <br />
-   <br />
-
-    <table align="center" cellpadding="0" cellspacing="0" class="style9">
-        <tr>
-            <td>
-                <strong>Please select a photo below and vote</strong>
-            </td>
-        </tr>
-    </table>
+   <table align="center" class="style14">
+       <tr>
+           <td class="style16">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <asp:CheckBox ID="A" runat="server" Text="A" />
+               <br />
+               <br />
+               <br />
+               <asp:Image ID="Image1" runat="server" Height="454px" 
+                   ImageUrl="~/Images/images/my brother Ricky and my nephew Tyler (2).jpg" 
+                   Width="299px" />
+           </td>
+           <td class="style17">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <asp:CheckBox ID="B" runat="server" Text="B" />
+               <br />               
+               <asp:Image ID="Image2" runat="server" Height="499px" 
+                   ImageUrl="~/Images/images/fishing.png" Width="315px" 
+                   style="margin-top: 0px" />
+           </td>
+       </tr>
+       <tr>
+           <td class="style15">
+               <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <asp:CheckBox ID="C" runat="server" 
+                   style="text-align: center; position: relative" Text="C" />
+               <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <asp:Image ID="Image3" runat="server" Height="380px" 
+                   ImageUrl="~/Images/images/Mickey Deer 011.jpg" Width="269px" />
+           </td>
+           <td class="style18">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <br />
+               <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <asp:CheckBox ID="D" runat="server" Text="D" />
+               <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <asp:Image ID="Image4" runat="server" 
+                   ImageUrl="~/Images/images/Jack with deer.JPG" Width="311px" />
+           </td>
+       </tr>
+       <tr>
+           <td class="style15">           
+           
+               &nbsp;&nbsp;&nbsp;           
+           
+               <asp:Button ID="Button1" runat="server" Text="Submit" />
+           </td>
+           
+           <td class="style18">
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <asp:Button ID="Button2" runat="server" Text="Reset" />
+           </td>
+       </tr>
+</table>
+       
     <br />
-    <br />
-    <table border="0" align="center" cellpadding="0" cellspacing="0" class="style1">
-        <tr>
-            <td  style="text-align:center" scope="row" class="style2">
-                <form action="mailto:t.l.blundell@cox.net" method="get" name="form6" target="_self"
-                id="form6">
-                A
-                <input name="A" type="checkbox" id="A" value="A" />
-                <br />
-                </form>
-                <a href="Images/images/my brother Ricky and my nephew Tyler (2).jpg">
-                    <img src="Images/images/my brother Ricky and my nephew Tyler (2).jpg" 
-                        align="middle" style="height: 355px;  width: 321px" /></a>
-            </td>
-            <td style="text-align: center" scope="row" class="style2">
-                <form action="mailto:t.l.blundell@cox.net" method="post" name="form7" target="_self"
-                id="form7">
-                B
-                <input name="B" type="checkbox" id="B" value="B" />
-                <br />
-                </form>
-                <a href="Images/images/photo (7).JPG">
-                    <img src="Images/images/photo (7).JPG" align="middle" 
-                    style="height: 359px; width: 325px" /></a>
-            </td>
-        </tr>
-        <tr>
-            <th height="296" style="text-align: center" scope="row" class="style2">
-                <a href="Images/images/Mickey Deer 011.jpg">
-                    <img src="Images/images/Mickey Deer 011.jpg" alt="Micky with Deer" align="middle"
-                        style="height: 359px; width: 325px" /></a>
-            </th>
-            <th style="text-align: center" scope="row" class="style3">
-                <form action="mailto:t.l.blundell@cox.net" method="get" name="form4" target="_self"
-                id="form4">
-                <a href="Images/images/photo (3).JPG">
-                    <img src="Images/images/photo (3).JPG" align="middle" 
-                    style="height: 359px; width: 325px" /></a></form>
-            </th>
-        </tr>
-        <tr>
-            <th scope="row" class="style4">
-                <p style="width: 170px" class="style10">
-                    <span style="text-align: left">C
-                        <input name="C" type="checkbox" id="C" value="C" />
-                    </span>
-                </p>
-            </th>
-            <th scope="row" class="style5">
-                D
-                <input name="D" type="checkbox" id="D" value="D" />
-            </th>
-        </tr>
-        <tr>
-            <th scope="row" class="style6">
-                <form id="form2" name="form2" method="post" action="mailto:t.l.blundell@cox.net">
-                <input type="submit" name="button" id="button" value="Submit" />
-                </form>
-            </th>
-            <th scope="row" class="style8">
-                <form id="form3" name="form3" action="">
-                <input type="reset" name="button2" id="button2" value="Reset" />
-                </form>
-            </th>
-        </tr>
-    </table>
-    <table class="style12" align="center">
-        <tr>
-            <td align="center" class="style13">
-                <strong>You may upload your own photos to be voted on upon approval</strong>
-            </td>
-        </tr>
-    </table>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <strong><span class="style19">You may upload any of your favorite Hunting and 
+    Fishing Photos to be voted on</span></strong>.<br />
     <p class="style13">
-        <input id="Text2" type="text" /><input id="Browse" type="button" value="Browse" /></p>
+        <asp:Button ID="Button3" runat="server" Text="Browse" />
+        <asp:TextBox ID="TextBox2" runat="server" Width="470px"></asp:TextBox>
+    </p>
 </asp:Content>
 
