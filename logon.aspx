@@ -18,7 +18,19 @@
     <asp:Label ID="lblPass" runat="server" Text="Label">Password: </asp:Label>
     <asp:TextBox ID="txtPass" runat="server" Width="180px" TextMode="Password"></asp:TextBox>
     <br />
-    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Button ID="btnSubmit" runat="server" Text="Logon" 
     onclick="btnSubmit_Click" />
-</asp:Content>
+    <br />
+    <br />
+    No Account, Please click link below<br />
+(<asp:HyperLink ID="HyperLink7" runat="server" Font-Bold="True" 
+            Font-Size="Large" NavigateUrl="~/LoginRegistration.aspx">Login Registration</asp:HyperLink>
+        )</p>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    </asp:Content>

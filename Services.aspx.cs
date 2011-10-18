@@ -11,4 +11,15 @@ public partial class Services : System.Web.UI.Page
     {
 
     }
+    protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        Response.Redirect(DropDownList2.SelectedValue);
+        
+
+    }
+    protected void Weather_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        Response.Redirect(DropDownList1.SelectedValue);
+
+    }
 }

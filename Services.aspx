@@ -22,11 +22,6 @@
         {
             font-size: large;
         }
-        .style5
-        {
-            font-size: large;
-            color: #FFFFFF;
-        }
         .style6
         {
             font-size: medium;
@@ -37,68 +32,109 @@
             font-size: medium;
             color: #000000;
         }
-        .style8
+        .style9
+        {
+            width: 1812px;
+        }
+        .style16
+        {
+            text-align: center;
+            width: 259px;
+        }
+        .style17
+        {
+            text-align: center;
+            width: 300px;
+        }
+        .style18
+        {
+            text-align: center;
+            width: 281px;
+        }
+        .style19
         {
             font-size: medium;
-            color: #000066;
+            text-decoration: underline;
         }
     </style>
 </head>
-<body bgcolor="#996600">
+<body bgcolor="#999966">
     <form id="form1" runat="server">
     <div class="style2">
     
         <strong style="text-align: center">Northeast Texas Hunting &amp; Fishing Guide Services</strong></div>
     <p class="style3">
         <strong>Welcome to the Services Page</strong></p>
-    <asp:Button ID="Button1" runat="server" PostBackUrl="~/Default.aspx" 
-        style="text-align: center" Text="Home" Width="105px" Font-Bold="True" />
+    <table class="style9">
+        <tr>
+            <td class="style17">
+                &nbsp;</td>
+            <td class="style18">
+                <asp:HyperLink ID="HyperLink2" runat="server" Font-Bold="True" 
+                    Font-Size="Large" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+            </td>
+            <td class="style17">
+                <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" 
+                    Font-Size="Large" NavigateUrl="~/Hunting.aspx">Hunting</asp:HyperLink>
+            </td>
+            <td class="style16">
+                <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" 
+                    Font-Size="Large" NavigateUrl="~/Fishing.aspx">Fishing</asp:HyperLink>
+            </td>
+            <td class="style16">
+                <asp:HyperLink ID="HyperLink4" runat="server" Font-Bold="True" 
+                    Font-Size="Large" NavigateUrl="~/Services.aspx">Services</asp:HyperLink>
+            </td>
+            <td class="style17">
+                <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" 
+                    Font-Size="Large">Sponsors</asp:HyperLink>
+            </td>
+            <td class="style16">
+                &nbsp;</td>
+        </tr>
+    </table>
     <br />
-    <asp:Button ID="Button2" runat="server" PostBackUrl="~/Hunting.aspx" 
-        Text="Hunting" Width="105px" Font-Bold="True" />
+    <strong><span class="style19">Register for guide services by clicking link 
+    below.</span></strong><br />
     <br />
-    <asp:Button ID="Button3" runat="server" PostBackUrl="~/Fishing.aspx" 
-        Text="Fishing" Width="105px" Font-Bold="True" />
-    <br />
-    <asp:Button ID="Button4" runat="server" Text="Sponsors" Width="105px" 
-        Font-Bold="True" />
-    <br />
-    <br />
-    <asp:Button ID="Button7" runat="server" Font-Bold="True" 
-        Text="Guide Registration" />
-    <p class="style5">
-        <strong style="color: #000000">Register or Login </strong></p>
-    <p class="style5">
-        <strong>
-        <asp:Button ID="Button5" runat="server" PostBackUrl="~/logon.aspx" 
-            Text="Login" Width="105px" Font-Bold="True" />
-        </strong></p>
-    <p class="style8">
-        <strong>Don&#39;t have a password click below</strong></p>
-    <p class="style4">
-        <strong>
-        <asp:Button ID="Button6" runat="server" PostBackUrl="~/LoginRegistration.aspx" 
-            Text="Sign Up" Width="105px" Font-Bold="True" />
-        </strong>
-    </p>
+    (<asp:HyperLink ID="HyperLink6" runat="server" Font-Bold="True" 
+        Font-Size="Medium" NavigateUrl="~/Guide Registration.aspx">Guide Registration</asp:HyperLink>
+    )<p class="style4">
+        (<asp:HyperLink ID="HyperLink7" runat="server" Font-Bold="True" 
+            Font-Size="Large" NavigateUrl="~/LoginRegistration.aspx">Login Registration</asp:HyperLink>
+        )</p>
     <p class="style7">
         <strong>Get Your Weather Information Here for Your Hunting or Fishing Adventure</strong></p>
     <p class="style6">
-        <asp:DropDownList ID="Weather" runat="server">
-            <asp:ListItem></asp:ListItem>
-            <asp:ListItem>Clarksville Texas</asp:ListItem>
-            <asp:ListItem Value="Cooper Texas">Cooper Texas</asp:ListItem>
-            <asp:ListItem>Greenville Texas</asp:ListItem>
-            <asp:ListItem>Mount Pleasant Texas</asp:ListItem>
-            <asp:ListItem>Paris Texas</asp:ListItem>
-            <asp:ListItem>Sulphur Springs Texas</asp:ListItem>
-            <asp:ListItem>Tyler Texas</asp:ListItem>
+        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" Height="25px" 
+            Width="195px" onselectedindexchanged="Weather_SelectedIndexChanged">
+            <asp:ListItem></asp:ListItem>            
+            <asp:ListItem Value="http://www.rssweather.com/zipcode/75432/wx.php ">Cooper Texas</asp:ListItem>
+            <asp:ListItem Value="http://www.rssweather.com/zipcode/75426/wx.php ">Clarksville Texas</asp:ListItem>
+            <asp:ListItem Value="http://www.rssweather.com/zipcode/75401/wx.php">Greenville Texas</asp:ListItem>
+            <asp:ListItem Value="http://www.rssweather.com/zipcode/75455/wx.php">Mount Pleasant Texas</asp:ListItem>
+            <asp:ListItem Value="http://www.rssweather.com/zipcode/75460/wx.php">Paris Texas</asp:ListItem>
+            <asp:ListItem Value="http://www.rssweather.com/zipcode/75482/wx.php">Sulphur Springs Texas</asp:ListItem>
+            <asp:ListItem Value="http://www.rssweather.com/zipcode/75701/wx.php">Tyler Texas</asp:ListItem>
         </asp:DropDownList>
     </p>
     <p class="style7">
         <strong>Get Lake Information Here</strong></p>
-    <asp:DropDownList ID="DropDownList2" runat="server">
+        <p class="style6">
+    <asp:DropDownList ID="DropDownList2" runat="server" Height="26px" Width="195px" 
+                AutoPostBack="True" onselectedindexchanged="DropDownList2_SelectedIndexChanged">
+    <asp:ListItem></asp:ListItem>           
+            <asp:ListItem Value="http://www.tpwd.state.tx.us/fishboat/fish/recreational/lakes/big_creek/">Big Creek Reservior</asp:ListItem>
+            <asp:ListItem Value="http://www.tpwd.state.tx.us/fishboat/fish/recreational/lakes/bob_sandlin/"> Bob Sandlin </asp:ListItem>
+            <asp:ListItem Value="http://www.tpwd.state.tx.us/fishboat/fish/recreational/lakes/cooper/">Cooper Lake</asp:ListItem>
+            <asp:ListItem Value="http://www.tpwd.state.tx.us/fishboat/fish/recreational/lakes/fork/">Lake Fork</asp:ListItem>
+            <asp:ListItem Value="http://www.tpwd.state.tx.us/fishboat/fish/recreational/lakes/monticello/">Lake Monticello</asp:ListItem>
+            <asp:ListItem Value="http://www.tpwd.state.tx.us/fishboat/fish/recreational/lakes/tawakoni/">Lake Tawakoni</asp:ListItem>
+            <asp:ListItem Value="http://www.tpwd.state.tx.us/fishboat/fish/recreational/lakes/pat_mayse/">Pat Mayse Lake</asp:ListItem>
     </asp:DropDownList>
+    </p>
     </form>
+    <br />
+    <br />
 </body>
 </html>

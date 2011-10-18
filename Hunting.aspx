@@ -15,9 +15,28 @@
             text-align: left;
             font-size: x-large;
         }
+        .style3
+        {
+            width: 1583px;
+        }
+        .style5
+        {
+            width: 362px;
+            text-align: center;
+        }
+        .style8
+        {
+            width: 315px;
+            text-align: center;
+        }
+        .style9
+        {
+            width: 300px;
+            text-align: center;
+        }
     </style>
 </head>
-<body bgcolor="#993300">
+<body bgcolor="#993300" style="height: 537px">
     <form id="form1" runat="server">
     <div align="center" style="font-size: larger; font-weight: 700">
     
@@ -33,30 +52,45 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         
-    <asp:Button ID="Home" runat="server" PostBackUrl="~/Default.aspx" Text="Home" 
-        Width="135px" 
-            Font-Bold="True" Height="38px" style="font-size: large" /> 
-    <asp:Button ID="Fishing" runat="server" Text="Fishing" Width="135px" Font-Bold="True" 
-            Height="37px" style="font-size: large" PostBackUrl="~/Fishing.aspx" />
-    <asp:Button ID="Services" runat="server" Text="Services" Width="135px" Font-Bold="True" 
-            Height="38px" style="font-size: large" PostBackUrl="~/Services.aspx" />
-    <asp:Button ID="Sponsors" runat="server" Text="Guide Registration" Width="218px" Font-Bold="True" 
-            Height="37px" style="font-size: large" 
-            PostBackUrl="~/Guide Registration.aspx" />
-    <asp:Button ID="Login" runat="server" Text="Login" Width="135px" Font-Bold="True" 
-            ForeColor="Black" Height="37px" PostBackUrl="~/logon.aspx" 
-            style="font-size: large; color: #000000; z-index: 1" />
-            
+        <br />
+        <table class="style3">
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style8">
+                    <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" 
+                        Font-Size="Medium" NavigateUrl="~/Default.aspx" style="color: #FFFFFF">Home</asp:HyperLink>
+                </td>
+                <td class="style8">
+                    <asp:HyperLink ID="HyperLink2" runat="server" Font-Bold="True" 
+                        Font-Size="Medium" NavigateUrl="~/Fishing.aspx" style="color: #FFFFFF">Fishing</asp:HyperLink>
+                </td>
+                <td class="style8">
+                    <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" 
+                        Font-Size="Medium" NavigateUrl="~/Services.aspx" style="color: #FFFFFF">Services</asp:HyperLink>
+                </td>
+                <td class="style8">
+                    <asp:HyperLink ID="HyperLink4" runat="server" Font-Bold="True" 
+                        Font-Size="Medium" style="color: #FFFFFF">Sponsors</asp:HyperLink>
+                </td>
+                <td class="style5">
+                    <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" 
+                        Font-Size="Medium" NavigateUrl="~/Guide Registration.aspx" 
+                        style="color: #FFFFFF">Guide Registration</asp:HyperLink>
+                </td>
+            </tr>
+        </table>
+        <br />
         <br />
     <br />
     </div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Image ID="Image1" runat="server" Height="194px" 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image1" runat="server" Height="194px" 
         ImageUrl="~/Images/images/Mickey Deer 011.jpg" Width="160px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Image ID="Image2" runat="server" Height="194px" 
         ImageUrl="~/Images/images/Dad's 13pointer .JPG" Width="189px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </form>
 </body>
 </html>

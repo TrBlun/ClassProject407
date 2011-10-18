@@ -11,13 +11,33 @@
             font-size: x-large;
             text-align: center;
         }
-        .style2
-        {
-            text-align: center;
-        }
         .style3
         {
             color: #B30000;
+        }
+        .style4
+        {
+            width: 1532px;
+        }
+        .style7
+        {
+            text-align: center;
+            width: 362px;
+        }
+        .style8
+        {
+            text-align: center;
+            width: 734px;
+        }
+        .style11
+        {
+            text-align: center;
+            width: 314px;
+        }
+        .style13
+        {
+            text-align: center;
+            width: 315px;
         }
     </style>
 </head>
@@ -27,24 +47,40 @@
     
                     <span class="style1"><strong>Northeast Texas Hunting &amp; Fishing Guide Services</strong></span><strong><br />
         <br />
-        <span class="style3">Welcome To the Fishing and Information Page</span></strong></div>
-    <div class="style2">
-        <asp:Button ID="Login" runat="server" PostBackUrl="~/logon.aspx" Text="Login" />
-        <asp:Button ID="Home" runat="server" PostBackUrl="~/Default.aspx" Text="Home" />
-        <asp:Button ID="Hunting" runat="server" PostBackUrl="~/Hunting.aspx" 
-            Text="Hunting" />
-        <asp:Button ID="Services" runat="server" Text="Services" 
-            PostBackUrl="~/Services.aspx" />
-        <asp:Button ID="Sponsors" runat="server" Text="Sponsors" />
-        <asp:Button ID="Guide" runat="server" Text="Guide Registration" 
-            PostBackUrl="~/Guide Registration.aspx" />
-    </div>
+        <span class="style3">Welcome To the Fishing and Information Page<br />
+                    </span></strong></div>
     <asp:Panel ID="Panel1" runat="server">
+        <table class="style4">
+            <tr>
+                <td class="style8">
+                    &nbsp;</td>
+                <td class="style13">
+                    <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" 
+                        Font-Size="Medium" NavigateUrl="~/Default.aspx" 
+                        style="text-align: right; color: #FFFFFF">Home</asp:HyperLink>
+                </td>
+                <td class="style13">
+                    <asp:HyperLink ID="HyperLink2" runat="server" Font-Bold="True" 
+                        Font-Size="Medium" Font-Underline="True" NavigateUrl="~/Hunting.aspx" 
+                        style="color: #FFFFFF">Hunting</asp:HyperLink>
+                </td>
+                <td class="style13">
+                    <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" 
+                        Font-Size="Medium" NavigateUrl="~/Services.aspx" style="color: #FFFFFF">Services</asp:HyperLink>
+                </td>
+                <td class="style13">
+                    <asp:HyperLink ID="HyperLink4" runat="server" style="color: #FFFFFF">Sponsors</asp:HyperLink>
+                </td>
+                <td class="style7">
+                    <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" 
+                        Font-Size="Medium" NavigateUrl="~/Guide Registration.aspx" 
+                        style="color: #FFFFFF">Guide Registration</asp:HyperLink>
+                </td>
+            </tr>
+        </table>
     </asp:Panel>
     <br />
     </form>
-    <p style="text-align: center">
-        &nbsp;</p>
     <p style="text-align: center">
         &nbsp;</p>
     <p style="text-align: center">
